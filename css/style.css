@@ -1,0 +1,183 @@
+body {
+  font-family: cursive;
+  overflow-x: hidden;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+.bg-section {
+  background-color: #f6f9fe;
+}
+
+.sec-caption {
+  background: #e7f1fd;
+}
+
+.navbar-light .navbar-nav .dropdown-menu[data-bs-popper] {
+  top: 140%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  position: relative;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.navbar-light .navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #106eea;
+  transition: inherit;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover {
+  color: #106eea;
+}
+
+.navbar-light .navbar-nav .nav-link.active::before, .navbar-light .navbar-nav .nav-link:hover::before {
+  width: 100%;
+}
+
+.navbar-light .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../images/hero-bg.jpg) center/cover;
+}
+
+#modal-1.fade .modal-dialog {
+  transition: transform 0.5s ease-out;
+  transform: scale(0);
+}
+
+#modal-1.show .modal-dialog {
+  transform: none;
+}
+
+#about .fa-book {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.progress-bar {
+  transition: 0.5s;
+}
+
+.counter-div .icon {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.counter-div h4 {
+  font-size: 18px;
+}
+
+.services {
+  overflow-y: hidden;
+}
+
+.services .box .overlay {
+  inset: 0;
+  background: rgba(16, 110, 234, 0.88);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.services .box:hover .overlay {
+  top: 0 !important;
+}
+
+.services .box:hover > * {
+  color: #fff !important;
+  transition: 0.5s;
+}
+
+.slider {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/testimonials-bg.jpg") center/cover;
+}
+
+.slider .carousel {
+  height: 350px;
+}
+
+.slider .carousel-item img {
+  width: 150px;
+  height: 150px;
+}
+
+.portfolio .list-group .list-group-item {
+  cursor: pointer;
+}
+
+.portfolio .filterd-items > a {
+  height: 350px;
+  animation: shown 0.5s ease-in;
+}
+
+.portfolio .filterd-items > a img {
+  object-fit: cover;
+}
+
+@keyframes shown {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.contact .box i {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border: 1px dashed #106eea;
+}
+
+.contact form {
+  height: 350px;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+footer .footer-list li {
+  position: relative;
+  padding: 0 5px 10px 15px;
+}
+
+footer .footer-list li::before {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  border-left-color: #106eea;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-top: -5px;
+}
+
+footer .footer-list li .nav-link:hover {
+  color: #106eea !important;
+}
+
+footer .social a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+}

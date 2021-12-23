@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/lightgallery.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Project-1</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-offset="78" data-bs-target=".navbar">
+    <nav class="navbar navbar-expand-md navbar-light bg-body shadow py-3 fixed-top">
+      <div class="container">
+        <a href="#home" class="navbar-brand text-primary fs-4">Eslam Salah</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavLinks">
+          <span class="fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavLinks">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-3"><a href="#home" class="nav-link active p-md-0">Home</a></li>
+            <li class="nav-item me-3"><a href="#about" class="nav-link p-md-0">About</a></li>
+            <li class="nav-item me-3"><a href="#services" class="nav-link p-md-0">Services</a></li>
+            <li class="nav-item me-3"><a href="#portfolio" class="nav-link p-md-0">Portfolio</a></li>
+            <li class="nav-item me-3"><a href="#contact" class="nav-link p-md-0">Contact</a></li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link p-md-0 dropdown-toggle" data-bs-toggle="dropdown">Others</a>
+              <ul class="dropdown-menu">
+                <li><a href="#progress-div" class="dropdown-item">Progress-bar</a></li>
+                <li><a href="#counter-div" class="dropdown-item">Counter</a></li>
+                <li><a href="#clients" class="dropdown-item">Clients</a></li>
+                <li><a href="#slider" class="dropdown-item">Slider</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start Home -->
+    <header class="position-relative" id="home">
+      <div class="container">
+        <div class="position-absolute top-50 translate-middle-y">
+          <h2 class="display-5" data-aos="fade-right">
+            Welcome to <span class="text-primary">our website</span>
+          </h2>
+          <p class="text-muted fs-4" data-aos="fade-left">
+            We are team of talented designers making websites with Bootstrap
+          </p>
+          <div class="btn-group" data-aos="fade-up">
+            <button class="btn btn-primary py-2 px-3 rounded me-3">Get Started</button>
+            <button
+              class="btn btn-outline-primary py-2 px-3 rounded"
+              data-bs-toggle="modal"
+              data-bs-target="#modal-1"
+            >
+              <i class="fas fa-play-circle me-1"></i>
+              Watch Video
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Create Modal -->
+    <div class="modal fade" id="modal-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="mb-0">Eslam Salah</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body overflow-hidden">
+            <video class="w-100 h-100" src="images/vid-5.mp4" muted autoplay loop></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start About -->
+    <section class="bg-section py-5" id="about">
+      <div class="container">
+        <!-- Caption -->
+        <div class="text-center mb-5">
+          <span
+            class="sec-caption d-inline-block mb-3 py-2 px-4 text-primary text-uppercase fs-5 rounded-pill"
+          >
+            About
+          </span>
+          <h3>Find Out More <span class="text-primary">About Us</span></h3>
+          <p class="text-muted">
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
+            atque vitae autem.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-3 mb-lg-0" data-aos="fade-right">
+            <img src="images/about.jpg" alt="about" class="img-fluid rounded" />
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="500">
+            <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda</h4>
+            <p class="text-muted fst-italic mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </p>
+            <ul class="list-unstyled">
+              <li class="d-flex mb-3">
+                <i
+                  class="
+                    fas
+                    fa-book
+                    flex-shrink-0
+                    text-primary text-center
+                    fs-5
+                    bg-body
+                    shadow
+                    rounded-circle
+                    me-3
+                  "
+                ></i>
+                <div>
+                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                </div>
+              </li>
+              <li class="d-flex">
+                <i
+                  class="
+                    fas
+                    fa-book
+                    flex-shrink-0
+                    text-primary text-center
+                    fs-5
+                    bg-body
+                    shadow
+                    rounded-circle
+                    me-3
+                  "
+                ></i>
+                <div>
+                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Progress bar -->
+    <div class="progress-div py-5" id="progress-div">
+      <div class="container">
+        <div class="row">
+          <!-- Progress part 1 -->
+          <div class="col-md-6 mb-3">
+            <div class="d-flex justify-content-between mb-2">
+              <b>HTMl</b>
+              <b class="progress-value"><span>0</span>%</b>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="40"
+              ></div>
+            </div>
+          </div>
+          <!-- Progress part 2 -->
+          <div class="col-md-6 mb-3">
+            <div class="d-flex justify-content-between mb-2">
+              <b>CSS</b>
+              <b class="progress-value"><span>0</span>%</b>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="50"
+              ></div>
+            </div>
+          </div>
+          <!-- Progress part 1 -->
+          <div class="col-md-6 mb-3">
+            <div class="d-flex justify-content-between mb-2">
+              <b>JAVASCRIPT</b>
+              <b class="progress-value"><span>0</span>%</b>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="60"
+              ></div>
+            </div>
+          </div>
+          <!-- Progress part 2 -->
+          <div class="col-md-6 mb-3">
+            <div class="d-flex justify-content-between mb-2">
+              <b>PHP</b>
+              <b class="progress-value"><span>0</span>%</b>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="70"
+              ></div>
+            </div>
+          </div>
+          <!-- Progress part 1 -->
+          <div class="col-md-6 mb-3 mb-md-0">
+            <div class="d-flex justify-content-between mb-2">
+              <b>WORDPRESS</b>
+              <b class="progress-value"><span>0</span>%</b>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="80"
+              ></div>
+            </div>
+          </div>
+          <!-- Progress part 2 -->
+          <div class="col-md-6">
+            <div class="d-flex justify-content-between mb-2">
+              <b>PHOTOSHOP</b>
+              <b class="progress-value"><span>0</span>%</b>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="90"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Counter -->
+    <div class="counter-div py-5" id="counter-div">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="bg-section p-5 text-center position-relative">
+              <i
+                class="
+                  fas
+                  fa-smile
+                  icon
+                  position-absolute
+                  top-0
+                  start-50
+                  translate-middle
+                  bg-primary
+                  text-light
+                  rounded-circle
+                  fs-4
+                "
+              ></i>
+              <h2 data-counter="110">0</h2>
+              <h4 class="fw-bold text-muted">Happy Clients</h4>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="bg-section p-5 text-center position-relative">
+              <i
+                class="
+                  fas
+                  fa-book
+                  icon
+                  position-absolute
+                  top-0
+                  start-50
+                  translate-middle
+                  bg-primary
+                  text-light
+                  rounded-circle
+                  fs-4
+                "
+              ></i>
+              <h2 data-counter="120">0</h2>
+              <h4 class="fw-bold text-muted">Projects</h4>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="bg-section p-5 text-center position-relative">
+              <i
+                class="
+                  fas
+                  fa-headphones
+                  icon
+                  position-absolute
+                  top-0
+                  start-50
+                  translate-middle
+                  bg-primary
+                  text-light
+                  rounded-circle
+                  fs-4
+                "
+              ></i>
+              <h2 data-counter="24">0</h2>
+              <h4 class="fw-bold text-muted">Hours Of Support</h4>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="bg-section p-5 text-center position-relative">
+              <i
+                class="
+                  fas
+                  fa-users
+                  icon
+                  position-absolute
+                  top-0
+                  start-50
+                  translate-middle
+                  bg-primary
+                  text-light
+                  rounded-circle
+                  fs-4
+                "
+              ></i>
+              <h2 data-counter="15">0</h2>
+              <h4 class="fw-bold text-muted">Hard Workers</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Clients -->
+    <div class="clients bg-section py-5" id="clients">
+      <div class="container">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-6 col-md-4 col-lg-2 p-5">
+            <img src="images/clients/client-1.png" alt="client-1" class="img-fluid" />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 p-5">
+            <img src="images/clients/client-2.png" alt="client-2" class="img-fluid" />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 p-5">
+            <img src="images/clients/client-3.png" alt="client-3" class="img-fluid" />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 p-5">
+            <img src="images/clients/client-4.png" alt="client-4" class="img-fluid" />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 p-5">
+            <img src="images/clients/client-5.png" alt="client-5" class="img-fluid" />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 p-5">
+            <img src="images/clients/client-6.png" alt="client-6" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Services -->
+    <section class="services pt-5" id="services">
+      <div class="container">
+        <!-- Caption -->
+        <div class="text-center mb-5">
+          <span
+            class="sec-caption d-inline-block mb-3 py-2 px-4 text-primary text-uppercase fs-5 rounded-pill"
+          >
+            Services
+          </span>
+          <h3>Find Out More <span class="text-primary">Services</span></h3>
+          <p class="text-muted">
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
+            atque vitae autem.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+            <div class="box shadow p-3 py-5 position-relative" data-aos="fade-up" data-aos-delay="200">
+              <div class="overlay position-absolute top-100"></div>
+              <i class="fas fa-chart-line text-primary fs-1"></i>
+              <h5 class="fw-bold my-3">deleniti atque corrupti</h5>
+              <p class="text-muted lh-lg mb-0">
+                Lorem, ipsum dolor Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+            <div class="box shadow p-3 py-5 position-relative" data-aos="fade-up" data-aos-delay="400">
+              <div class="overlay position-absolute top-100"></div>
+              <i class="fas fa-chart-line text-primary fs-1"></i>
+              <h5 class="fw-bold my-3">deleniti atque corrupti</h5>
+              <p class="text-muted lh-lg mb-0">
+                Lorem, ipsum dolor Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+            <div class="box shadow p-3 py-5 position-relative" data-aos="fade-up" data-aos-delay="600">
+              <div class="overlay position-absolute top-100"></div>
+              <i class="fas fa-chart-line text-primary fs-1"></i>
+              <h5 class="fw-bold my-3">deleniti atque corrupti</h5>
+              <p class="text-muted lh-lg mb-0">
+                Lorem, ipsum dolor Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+            <div class="box shadow p-3 py-5 position-relative" data-aos="fade-up" data-aos-delay="800">
+              <div class="overlay position-absolute top-100"></div>
+              <i class="fas fa-chart-line text-primary fs-1"></i>
+              <h5 class="fw-bold my-3">deleniti atque corrupti</h5>
+              <p class="text-muted lh-lg mb-0">
+                Lorem, ipsum dolor Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Slider -->
+    <section class="slider my-5" id="slider">
+      <div class="container">
+        <div class="carousel slide pt-4 pt-md-5" id="move" data-bs-ride="carousel">
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+              <img
+                src="images/testimonials/testimonials-1.jpg"
+                alt="testimonials-1"
+                class="d-block mx-auto rounded-circle"
+              />
+              <div class="carousel-caption">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img
+                src="images/testimonials/testimonials-2.jpg"
+                alt="testimonials-2"
+                class="d-block mx-auto rounded-circle"
+              />
+              <div class="carousel-caption">
+                <h5>second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img
+                src="images/testimonials/testimonials-3.jpg"
+                alt="testimonials-3"
+                class="d-block mx-auto rounded-circle"
+              />
+              <div class="carousel-caption">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Controls -->
+          <button type="button" class="carousel-control-next" data-bs-target="#move" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <button type="button" class="carousel-control-prev" data-bs-target="#move" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" class="active" data-bs-slide-to="0" data-bs-target="#move"></button>
+            <button type="button" data-bs-slide-to="1" data-bs-target="#move"></button>
+            <button type="button" data-bs-slide-to="2" data-bs-target="#move"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <!-- Caption -->
+        <div class="text-center mb-5">
+          <span
+            class="sec-caption d-inline-block mb-3 py-2 px-4 text-primary text-uppercase fs-5 rounded-pill"
+          >
+            Portfolio
+          </span>
+          <h3>Find Out More <span class="text-primary">Portfolio</span></h3>
+          <p class="text-muted">
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
+            atque vitae autem.
+          </p>
+        </div>
+        <ul class="list-group list-group-horizontal justify-content-center mb-5">
+          <li class="list-group-item active" data-filter=".all">All</li>
+          <li class="list-group-item" data-filter=".app">App</li>
+          <li class="list-group-item" data-filter=".photo">Photo</li>
+          <li class="list-group-item" data-filter=".web">Web</li>
+        </ul>
+        <div class="row filterd-items" id="lightgallery">
+          <a
+            href="images/portfolio/portfolio-1.jpg"
+            class="col-md-6 col-lg-4 mb-3 photo all"
+            data-aos="flip-left"
+            data-aos-delay="200"
+          >
+            <img src="images/portfolio/portfolio-1.jpg" alt="portfolio-1" class="w-100 h-100 p-2 shadow" />
+          </a>
+          <a
+            href="images/portfolio/portfolio-2.jpg"
+            class="col-md-6 col-lg-4 mb-3 photo all"
+            data-aos="flip-left"
+            data-aos-delay="400"
+          >
+            <img src="images/portfolio/portfolio-2.jpg" alt="portfolio-2" class="w-100 h-100 p-2 shadow" />
+          </a>
+          <a
+            href="images/portfolio/portfolio-3.jpg"
+            class="col-md-6 col-lg-4 mb-3 app all"
+            data-aos="flip-left"
+            data-aos-delay="600"
+          >
+            <img src="images/portfolio/portfolio-3.jpg" alt="portfolio-3" class="w-100 h-100 p-2 shadow" />
+          </a>
+          <a
+            href="images/portfolio/portfolio-4.jpg"
+            class="col-md-6 col-lg-4 mb-3 app all"
+            data-aos="flip-left"
+            data-aos-delay="800"
+          >
+            <img src="images/portfolio/portfolio-4.jpg" alt="portfolio-4" class="w-100 h-100 p-2 shadow" />
+          </a>
+          <a
+            href="images/portfolio/portfolio-5.jpg"
+            class="col-md-6 col-lg-4 mb-3 web all"
+            data-aos="flip-left"
+            data-aos-delay="1000"
+          >
+            <img src="images/portfolio/portfolio-5.jpg" alt="portfolio-5" class="w-100 h-100 p-2 shadow" />
+          </a>
+          <a
+            href="images/portfolio/portfolio-6.jpg"
+            class="col-md-6 col-lg-4 mb-3 web all"
+            data-aos="flip-left"
+            data-aos-delay="1200"
+          >
+            <img src="images/portfolio/portfolio-6.jpg" alt="portfolio-6" class="w-100 h-100 p-2 shadow" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <!-- Caption -->
+        <div class="text-center mb-5">
+          <span
+            class="sec-caption d-inline-block mb-3 py-2 px-4 text-primary text-uppercase fs-5 rounded-pill"
+          >
+            Contact Us
+          </span>
+          <h3>Find Out More <span class="text-primary">Contact Us</span></h3>
+          <p class="text-muted">
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
+            atque vitae autem.
+          </p>
+        </div>
+        <div class="row" data-aos="zoom-out-left">
+          <div class="col-md-12 col-lg-6 col-xxl-4 mb-3">
+            <div class="box text-center text-muted p-3 shadow">
+              <i class="fas fa-map-marker-alt fs-3 text-primary mb-3 rounded-circle"></i>
+              <h5 class="fw-bold">Our Address</h5>
+              <p class="mb-0">A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xxl-4 mb-3">
+            <div class="box text-center text-muted p-3 shadow">
+              <i class="fas fa-envelope fs-3 text-primary mb-3 rounded-circle"></i>
+              <h5 class="fw-bold">Email Us</h5>
+              <p class="mb-0">contact@example.com</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 col-xxl-4 mb-3">
+            <div class="box text-center text-muted p-3 shadow">
+              <i class="fas fa-phone fs-3 text-primary mb-3 rounded-circle"></i>
+              <h5 class="fw-bold">Call Us</h5>
+              <p class="mb-0">+1 5589 55488 55</p>
+            </div>
+          </div>
+        </div>
+        <!-- Create Map -->
+        <div class="row mt-4">
+          <div class="col-lg-6 mb-3" data-aos="zoom-out-right" data-aos-delay="500">
+            <iframe
+              class="p-2 shadow border-0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.26601864766!2d31.41785910916174!3d31.041454962094512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2z2KfZhNmF2YbYtdmI2LHYqdiMINin2YTZhdmG2LXZiNix2KkgKNmC2LPZhSAyKdiMINin2YTZhdmG2LXZiNix2KnYjCDYp9mE2K_ZgtmH2YTZitip2Iwg2YXYtdix!5e0!3m2!1sar!2sus!4v1640280648267!5m2!1sar!2sus"
+              width="100%"
+              height="350"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <!-- Create Form -->
+          <div class="col-lg-6" data-aos="zoom-out-left" data-aos-delay="1000">
+            <form action="" class="p-3 shadow">
+              <div class="row">
+                <div class="col-6">
+                  <input class="form-control" type="text" placeholder="Your Name" />
+                </div>
+                <div class="col-6">
+                  <input class="form-control" type="email" placeholder="Your Email" />
+                </div>
+              </div>
+              <input class="form-control my-3" type="text" placeholder="Your Subject" />
+              <textarea class="form-control mb-3" rows="6" placeholder="Message"></textarea>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="bg-section pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-2">
+            <div class="text-muted">
+              <h5 class="fw-bold mb-4 text-primary">Eslam Salah</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum assumenda rem repellat
+                similique corrupti
+              </p>
+              <p><b>Email:</b> <span class="text-decoration-underline">info@example.com</span></p>
+              <p><b>Phone:</b> <span class="text-decoration-underline">+1 5589 55488 55</span></p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
+            <div class="text-muted">
+              <h5 class="fw-bold mb-4">Our Links</h5>
+              <ul class="list-unstyled footer-list">
+                <li><a href="#" class="nav-link text-muted p-0">Home</a></li>
+                <li><a href="#" class="nav-link text-muted p-0">About</a></li>
+                <li><a href="#" class="nav-link text-muted p-0">Services</a></li>
+                <li><a href="#" class="nav-link text-muted p-0">Portfolio</a></li>
+                <li><a href="#" class="nav-link text-muted p-0">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
+            <div class="text-muted">
+              <h5 class="fw-bold mb-4">Useful Links</h5>
+              <ul class="list-unstyled footer-list">
+                <li><a href="#" class="nav-link text-muted p-0">Home</a></li>
+                <li><a href="#" class="nav-link text-muted p-0">About</a></li>
+                <li><a href="#" class="nav-link text-muted p-0">Services</a></li>
+                <li><a href="#" class="nav-link text-muted p-0">Portfolio</a></li>
+                <li><a href="#" class="nav-link text-muted p-0">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-2">
+            <div class="text-muted">
+              <h5 class="fw-bold mb-4">Our Social</h5>
+              <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+              <div class="social">
+                <a href="#" class="bg-primary text-light me-2 rounded d-inline-block">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="bg-primary text-light me-2 rounded d-inline-block">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="bg-primary text-light me-2 rounded d-inline-block">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="bg-primary text-light me-2 rounded d-inline-block">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="bg-primary text-light rounded d-inline-block">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center pt-4">
+          <p class="fs-5">Create by <b class="text-primary">Eslam Salah</b> &copy; 23/12/2021</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/lightgallery.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

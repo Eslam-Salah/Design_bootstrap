@@ -1,0 +1,223 @@
+@import "variables";
+
+body {
+  font-family: cursive;
+  overflow-x: hidden;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+// Global
+.bg-section {
+  background-color: #f6f9fe;
+}
+
+.sec-caption {
+  background: #e7f1fd;
+}
+
+// Start Navbar
+.navbar-light {
+  .navbar-nav {
+    .dropdown-menu[data-bs-popper] {
+      top: 140%;
+    }
+    .nav-link {
+      position: relative;
+      font-size: 18px;
+      transition: 0.4s;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: $blue;
+        transition: inherit;
+      }
+      &.active,
+      &:hover {
+        color: $blue;
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+}
+
+// Start Header
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(#fff, 0.6), rgba(#fff, 0.6)), url(../images/hero-bg.jpg) center/cover;
+}
+
+// Start Modal
+#modal-1 {
+  &.fade .modal-dialog {
+    transition: transform 0.5s ease-out;
+    transform: scale(0);
+  }
+  &.show .modal-dialog {
+    transform: none;
+  }
+}
+
+// Start About
+#about {
+  .fa-book {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+// Start Progress Bar
+.progress-bar {
+  transition: 0.5s;
+}
+
+// Start Counter
+.counter-div {
+  .icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+}
+
+// Start Services
+.services {
+  overflow-y: hidden;
+  .box {
+    .overlay {
+      inset: 0;
+      background: rgba($blue, 0.88);
+      z-index: -1;
+      transition: 0.5s;
+    }
+    &:hover {
+      .overlay {
+        top: 0 !important;
+      }
+      > * {
+        color: #fff !important;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+// Start Slider
+.slider {
+  background: linear-gradient(rgba(#000, 0.5), rgba(#000, 0.5)),
+    url("../images/testimonials-bg.jpg") center/cover;
+
+  .carousel {
+    height: 350px;
+  }
+
+  .carousel-item {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+// Start Portfolio
+.portfolio {
+  .list-group {
+    .list-group-item {
+      cursor: pointer;
+    }
+  }
+
+  .filterd-items {
+    > a {
+      height: 350px;
+      animation: shown 0.5s ease-in;
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@keyframes shown {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// Start Contact
+.contact {
+  .box {
+    i {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      border: 1px dashed $blue;
+    }
+  }
+  form {
+    height: 350px;
+
+    textarea {
+      resize: none;
+    }
+  }
+}
+
+// Start Footer
+
+footer {
+  .footer-list {
+    li {
+      position: relative;
+      padding: 0 5px 10px 15px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        border: 5px solid transparent;
+        border-left-color: #106eea;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        margin-top: -5px;
+      }
+
+      .nav-link {
+        &:hover {
+          color: $blue !important;
+        }
+      }
+    }
+  }
+  .social {
+    a {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+}
